@@ -1,0 +1,68 @@
+====== Συχνά Προβλήματα PC ======
+
+<callout type="info">Για προβλήματα σχετικά με το στήσιμο [[networks:mod|MOD]], [[networks:pubadmin|TPCMOD]] και [[networks:free-internet|INT]] PC ελέγχουμε τις αντίστοιχες ενότητες οι οποίες περιέχουν όλες τις απαραίτητες πληροφορίες και τα συχνά προβλήματα.</callout>
+
+<callout type="info">Για να ανοίξουμε το device manager είτε το ψάχνουμε στην αναζήτηση των windows είτε πατάμε δεξί κλικ έχοντας πατημένο το shift και ανοίγουμε είτε command prompt είτε windows power shell. Εκεί πατάμε devmgmt.msc και μετά enter. </callout>
+
+<accordion collapsed="true">
+<panel title="Δεν φορτώνουν τα Windows">
+Μπορεί έπειτα από επαναφορά των ρυθμίσεων στα BIOS να αλλάξει το πρωτόκολλο από AHCI σε IDE. Θα πρέπει να αλλάξει πάλι η προεπιλογή σε AHCI.
+</panel>
+
+<panel title="No Logon Servers">
+Ελέγχουμε για πρόβλημα στο δίκτυο. Είναι το καλώδιο ethernet συνδεδεμένο; Συνήθως αυτό το σφάλμα το βγάζουν τα Win7 όταν δεν έχουν δίκτυο και προσπαθούμε να συνδεθούμε.
+</panel>
+
+<panel title="Δε μπορώ να βάλω κωδικό YETHA1 στα BIOS υπολογιστή HP Compaq 8200 Elite">
+Με βάση το manual του συγκεκριμένου μοντέλου, πάνω στη motherboard υπάρχει ένα password jumper με κωδικό E49. Για να μπορέσουμε να 
+βάλουμε κωδικό στα BIOS θα πρέπει το "καπάκι" να συνδέει και τα δύο pins του jumper αλλιώς ο κωδικός δε θα αποθηκεύεται.
+{{:useful:jumper.jpg}}
+</panel>
+
+<panel title="Error μετά από έλεγχο για updates">
+  * Error 8024002E/8007000C/8007000CE: Λύση [[windows-update-problem|εδώ]]
+  * Error 8024402C: Λύση [[networks:mod#έλεγχος_mod-pc|εδώ]]
+</panel>
+
+<panel title="User Profile cannot be loaded">
+Λύση [[:user-profile|εδώ]]
+</panel>
+
+<panel title="Το ανεμιστηράκι του επεξεργαστή ξεκινά και σταματά συνεχώς. Ο υπολογιστής δεν ανοίγει.">
+Αλλαγή τροφοδοτικού.
+</panel>
+
+<panel title="Βγάζει μήνυμα 'The logon method you are using is not allowed on this computer' κατά το login σε MOD PC.">
+Αίτημα για OU. Εάν έχει ήδη μπεί, τότε gpupdate /force και restart.
+</panel>
+
+<panel title="Δεν μπορώ να κάνω boot από network και δεν βρίσκω την επιλογή να το ενεργοποιήσω.">
+Σε αυτή την περίπτωση πηγαίνουμε στην επιλογή South Bridge και το κάνουμε enable από εκεί.
+</panel>
+
+<panel title="Δεν μπορώ να κατεβάσω κάτι σε TPC MOD(πχ drivers). ΓΙΑ ΧΡΗΣΗ ΤΠΕΝΤ ΜΟΝΟ.">
+Σε αυτή την περίπτωση πηγαίνουμε στο url της σελίδας που περιέχει το αρχείο προς κατέβασμα και μετατρέπουμε το http σε https έτσι ώστε να κάνουμε το download secure.
+</panel>
+
+<panel title="Δεν κάνει boot σε windows με error για storage.">
+Αν έχει γίνει διακοπή ρεύματος μπορεί να έχει γίνει reset η bios. Αυτό σημαίνει ότι αν είχαμε επιλέξει μόνοι μας boot σε ahci ή ide, θα πρέπει να το διαλέξουμε πάλι, διότι έχουν γυρίσει οι default ρυθμίσεις.
+</panel>
+
+<panel title="win10 mod, παίρνει αρχεία word από άλλα pc να τα τυπώσει και στην εκτύπωση το layout αλλάζει">
+Είναι known bug των latest word versions όπου υπάρχει ασυμβατότητα σε σύγκριση με παλιότερες εκδόσεις. Για να επιλυθεί πρέπει να ενεργοποιηθεί το use print metrics, ακολουθείστε τις παρακάτω οδηγίες:
+
+The option to "Use printer metrics to lay out document" is a Layout Option (Compatibility Option) that is available in Word 2013 and 2016 only if you set the document compatibility to Word 2010, which you can do with this simple procedure:
+
+Press Alt+F11 to open the VBA Editor.
+Press Ctrl+G to get to the Immediate window.
+In that window, type
+          ActiveDocument.SetCompatibilityMode 14
+and press Enter.
+Close the VBA Editor to return to the document.
+Go to File | Options | Advanced: Compatibility options and set "Lay out this document as if created in" to "Microsoft Word 2010."
+You will now see additional layout options that include "Use printer metrics..." Check that box.
+Click OK to exit.
+</panel>
+
+
+</accordion>

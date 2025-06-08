@@ -1,0 +1,67 @@
+Method #1:
+BIOS Menu
+By opening the BIOS menu and finding the Default Settings option, you can reset the BIOS directly from its menu.
+
+To do so, follow these steps:
+
+Restart your computer
+Notice the key that you need to press at the first screen. This key opens the BIOS menu or “setup” utility.
+For example, here’s how this looks like on many Dell PCs:
+Dell BIOS screen showing special key options
+Notice the key guide in the top-right corner.
+
+This key is usually any of the following, depending on your computer manufacturer: Esc, Del, F2, F8, F12.
+
+
+
+Find the option to reset the BIOS settings. This option is usually called any of the following:
+Load Default
+Load Fail-Safe Defaults
+Load BIOS Defaults
+Load Default Settings
+Load Setup Default
+Get Default Values
+
+
+Save these changes
+Exit BIOS
+
+Method #2:
+
+Clear the jumper
+Your computer’s motherboard has a special jumper that can clear the BIOS saved settings and revert them to their original values.
+
+By clearing the jumper, you can also reset the password for the BIOS menu.
+
+To do so, follow these steps:
+
+Shutdown your computer
+Flip the power switch so that the computer receives no power.
+Make sure you’re grounded. Static discharges can damage your computer.
+On the motherboard, find a jumper that’s named like any of the following. (This jumper is usually placed near the CMOS battery.)
+CLEAR CMOS
+CLEAR
+CLR CMOS
+CLR PWD
+
+
+Set the jumper to the Clear/CLR position
+Power on and start your computer
+Once your PC has booted, turn it back off, move the CLR jumper back to its original position. Otherwise, each time you reboot, your settings (and clock) will automatically reset!
+Method #3: Replace the CMOS battery
+If Method #2 above
+doesn’t work (your computer doesn’t have the mentioned jumper), you can also try to remove and replace the CMOS battery. This method works if your computer has a CMOS battery. Not all motherboards have that battery. To reset the BIOS by replacing the CMOS battery, follow these steps instead:
+
+Shutdown your computer
+Remove the power cord to make sure that your computer receives no power.
+Make sure you’re grounded. Static discharges can damage your computer.
+Find the battery on your motherboard
+
+
+Remove it. 
+If the battery doesn’t move easily, stop following this method to reset the BIOS, go to Method #1 or Method #2.
+Wait 5 to 10 minutes
+Put the battery back in
+Power on your computer
+
+[[https://neosmart.net/wiki/reset-bios-cmos/|https://neosmart.net/wiki/reset-bios-cmos/]]

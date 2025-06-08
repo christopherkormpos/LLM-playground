@@ -1,0 +1,37 @@
+====== Ανάκτηση διαγραμμένων αρχείων ======
+
+Για την ανάκτηση αρχείων και partitions που έχουν διαγραφεί κάνουμε boot from network στο LAN του ΤΠΕΝΤ και επιλέγουμε "Boot Lubuntu".
+
+Κάνουμε login, ανοίγουμε το terminal και γράφουμε "testdisk".
+
+{{:pxe:recover-deleted-files-linux-2.png|}}
+
+Πατάμε το "Create" για τη δημιουργία ενός νέου log file.
+
+Τώρα θα πρέπει να μπορούμε να δούμε τους σκληρούς δίσκους του μηχανήματος.
+
+{{:pxe:recover-deleted-files-linux-5.png|}}
+
+Κάνουμε highlight τον επιθυμητό δίσκο και πατάμε "Proceed".
+
+{{:pxe:recover-deleted-files-linux-6.png|}}
+
+To TestDisk επιλέγει μόνο του τη σωστή επιλογή. Προχωράμε.
+
+{{:pxe:recover-deleted-files-linux-7.png|}}
+
+Επιλέγουμε "Advanced".
+
+{{:pxe:recover-deleted-files-linux-8.png|}}
+
+Στο κάτω μέρος της οθόνης πατάμε undelete. 
+
+{{mdi>ghost}}
+
+{{:pxe:recover-deleted-files-linux-9.png|}}
+
+To TestDisk σκανάρει και εμφανίζει διαγραμμένα αρχεία με κόκκινο χρώμα.
+
+{{:pxe:recover-deleted-files-linux-11.png|}}
+
+Επιλέγουμε το επιθυμητό αρχείο και πατάμε το "C" για να το κάνουμε copy σε κάποιο σημείο.

@@ -1,0 +1,118 @@
+3 ways to connect to hidden Wi-Fi networks in Windows 10
+TUTORIAL
+by 
+Codrut Neagu
+ published on 04.19.2019
+Share:
+
+
+Hidden WiFi networks do not broadcast their names, so they are not visible in the list of wireless networks that Windows 10 displays. However, that does not mean that you cannot connect to a hidden WiFi: you can, but you have to know its name, password and other security information. Here are three different ways to connect to hidden Wi-Fi networks, on laptops, tablets and hybrid devices with Windows 10:
+
+What you must know about the hidden Wi-Fi network
+When you connect to a wireless network that broadcasts its name and is visible in the list of available networks, much of the network configuration is done automatically. All you have to do is enter a password or press the WPS button on the router. However, when you connect to a hidden wireless network, you must know its security information. You have to enter all the details manually:
+
+The name or SSID (Service Set Identifier) of the hidden wireless network
+The password used by the wireless network
+The type of encryption (or security) used by the Wi-Fi network. If the network uses WEP, note the WEP key. If it is using WPA-PSK or WPA2-PSK, note the Pre-shared key. If it is not using any security, you only need the SSID.
+You can find all this information from the owner of the Wi-Fi network, the IT administrator (if you are in a business environment) or from your wireless router if you are at home. You can also follow the recommendations from this guide: How to find hidden wireless networks (SSIDs) in your area, in Windows. Before trying to connect, make sure that you are in the range of the hidden wireless network.
+
+Method 1: Connect to a hidden wireless network using the networks list from the system tray
+First of all, open the list of available Wi-Fi networks, by clicking or tapping the Wi-Fi icon from the system tray (the bottom-right corner of the desktop). If you do not see this icon, read this tutorial to bring it back: How to set the icons shown on the Windows 10 taskbar, in the system tray.
+
+
+The networks icon from the Windows 10 system tray
+The networks icon from the Windows 10 system tray
+Windows 10 displays all the wireless networks in your area. Scroll through the list until you reach the bottom. That's where you see a Wi-Fi network called Hidden Network. Click or tap this entry.
+
+
+Clicking the Hidden Network from the networks list shown by Windows 10
+Clicking the Hidden Network from the networks list shown by Windows 10
+Tick the "Connect automatically" option and then press Connect.
+
+
+The option to connect automatically to the hidden network
+The option to connect automatically to the hidden network
+You are now asked to enter the name of the hidden wireless network. Type it and press Next.
+
+
+Entering the SSID of the hidden WiFi network
+Entering the SSID of the hidden WiFi network
+When you are asked to enter the password (or security key) of the hidden network, type it and press Next.
+
+
+Entering the network security key
+Entering the network security key
+Windows 10 spends a few seconds and tries to connect to the hidden Wi-Fi network. If everything went well, you are asked whether you want to allow your PC to be discoverable on this network. Choose Yes or No, depending on what you want. This choice sets the network location or profile and your network sharing settings. If you want to know more and understand this choice, read: What are network locations in Windows?.
+
+
+Choosing whether the network is public or private
+Choosing whether the network is public or private
+You are now connected to the hidden wireless network.
+
+Method 2: Connect to a hidden wireless network using the Settings app
+The Settings app offers us another method to connect to hidden wireless networks. The first step is to open the Settings and then the Network & Internet category.
+
+
+Windows 10 Settings
+Windows 10 Settings
+Select Wi-Fi on the left side of the window, and click or tap "Manage known networks" on the right side.
+
+
+Manage known networks in Windows 10
+Manage known networks in Windows 10
+On the "Manage known networks" page, click or tap the "+ Add a network" button.
+
+
+Adding a new network
+Adding a new network
+Enter the security information for the hidden wireless network, as follows:
+
+Enter the SSID or the name of the hidden network, in the Network name field.
+In the Security type field choose the type of security used by the hidden network. Some routers may name this authentication method. Depending on the security type you choose, Windows 10 may or may not ask you also to specify an encryption type.
+In the Security key field, enter the password used by the hidden WiFi.
+To connect to the hidden network automatically, check the box that says "Connect automatically."
+If you want, you can also check the box that says "Connect even if the network is not broadcasting." This makes Windows 10 search for the hidden network every time it is not connected to a network, even if the hidden network is not in your area. However, it may put your privacy at risk because skilled professionals can intercept this search for the hidden network. It also uses battery power while the search is on, if your device runs on batteries.
+When done completing everything, click or tap Save.
+
+
+Entering the details of the hidden wireless network in Windows 10
+Entering the details of the hidden wireless network in Windows 10
+Once you save the new wireless network, Windows 10 tries to connect to it automatically. If you entered its details correctly, you should connect in no time.
+
+Method 3: Connect to a hidden wireless network using the Control Panel and the "Set Up a Connection or Network" wizard
+If the options shown in the first two methods are not found on your Windows 10 laptop or tablet, then you might be using an older version of Windows 10. If you do not know which, read What version, edition, and type of Windows 10 do I have installed?
+
+In this case, you need to try this method instead: open the Control Panel and go to "Network and Internet -> Network and Sharing Center." There, click or tap the link that says: "Set up a new connection or network."
+
+
+Set up a new connection or network
+Set up a new connection or network
+The "Set Up a Connection or Network" wizard is started. Choose "Manually connect to a wireless network" and click or tap Next.
+
+
+Manually connect to a wireless network
+Manually connect to a wireless network
+Enter the security information for your WiFi network in the appropriate fields, as follows:
+
+Enter the SSID or the name of the network, in the Network name field.
+In the Security type field choose the type of security used by the hidden wireless network. Some routers may name this authentication method. Depending on the security type you choose, Windows 10 may or may not ask you to specify an encryption type.
+In the Security key field, enter the password used by the hidden WiFi.
+If you do not want others to see the password you type, check the box that says "Hide characters."
+To connect to this network automatically, check the box that says "Start this connection automatically."
+If you want, you can also check the box that says "Connect even if the network is not broadcasting." This makes Windows 10 search for the hidden network every time it is not connected to a network, even if the hidden network is not in your area. This may put your privacy at risk because skilled professionals can intercept this search for the hidden network.
+When done completing everything, click Next.
+
+
+Entering the details of the hidden wireless network
+Entering the details of the hidden wireless network
+Windows 10 notifies you that it has successfully added the wireless network. Click Close and you are done.
+
+
+The hidden wireless network has been added
+The hidden wireless network has been added
+If you are in the range of the hidden wireless network, Windows 10 automatically connects to it.
+
+Why do you use hidden WiFi?
+As you have seen from this tutorial, the procedure for connecting to a hidden network is a bit more complex than the simple process of connecting to WiFi networks that broadcast their name. Also, using a hidden wireless network does not make you more secure. Therefore, before closing this article, we would like to know why you use hidden wireless networks, and where. Is it at home or at work? Comment below and let's discuss.
+
+[[https://www.digitalcitizen.life/how-connect-hidden-wireless-networks-windows-10/]]

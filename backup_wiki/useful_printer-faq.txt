@@ -1,0 +1,106 @@
+====== Συχνά Προβλήματα Εκτυπωτών - Φωτοτυπικών ======
+
+<accordion collapsed="true">
+
+<panel title="Ricoh τυπώνει αχνά">
+Πάμε στον εκτυπωτή και εκτυπώνουμε μια σελίδα. Ύστερα πατάμε το κίτρινο C, 107, και το κόκκινο C παρατεταμένα μέχρι να μπει σε ρυθμίσεις. Μετά επιλέγουμε το [SP-ZXXX] Drum και το [2207] Forced Toner Supply. Πατάμε το execute, το αφήνουμε να ολοκληρώσει τη διαδικασία και επαναλαμβάνουμε άλλες 2 φορές. Εκτυπώνουμε καινούργια σελίδα και συγκρίνουμε. Μπορεί να χρειαστεί να εκτελέσουμε και άλλες φορές το Forced Toner Supply.
+</panel>
+
+<panel title="Ο OKI ζητάει κωδικό για το admin setup">
+OKI 332 - Δοκιμάζουμε τους παρακάτω:
+
+  * aaaaaa
+  * bbbbbb
+  * 123456
+</panel>
+
+<panel title="Αναρωτιέμαι που είναι η εφαρμογή ActKey για scans σε OKI MC363">
+"Κόκκινος σκληρός" ή sw$:...\DRIVERS\SCANNERS\OKI MC363
+</panel>
+
+<panel title="Ricoh (/Gestener) κλειδώνει και ζητά να καλέσει ο χρήστης το Gestener Support. Κωδικός SC545.">
+  - Πατάμε το κίτρινο C
+  - Πατάμε 107
+  - Κόκκινο C παρατεταμένα
+  - Μπαίνουμε στο SP Copy
+  - Μπαίνουμε στο SP 5xxx
+  - Ψάχνουμε για το SP Reset και πατάμε Execute
+  - Επανεκκίνηση του printer. Όταν ζητήσει κωδικό ρωτάμε τη γραμματεία. Στα Ν ο κωδικός είναι 19541975
+</panel>
+
+<panel title="Lexmark εμφανίζει Invalid Toner Cartridge">
+Δοκιμάζουμε με διαφορετικό toner, αλλιώς εναλλακτική είναι να κάνουμε downgrade στο firmware του εκτυπωτή. Αυτό γίνεται απλώς βάζοντας στο usb τα αρχεία της εταιρείας κι ακολουθώντας τις οδηγίες που μας δίνει η εταιρεία.
+</panel>
+
+<panel title="Οι σελίδες που εκτυπώνονται είναι άσπρες">
+Αυτό μάλλον συμβαίνει εξαιτίας του εκτυπωτή. Αρχικά, ελέγχουμε αλλάζοντας το μελάνι και μετά αλλάζοντας το imaging unit. Αν κι αυτό δεν φτιάξει την κατάσταση τότε ενημερώνουμε τον προϊστάμενο. Αυτό το πρόβλημα συμβαίνει λόγω υπερθέρμανσης. Δηλαδή μπορεί οι χρήστες να παραπονεθούν ότι τύπωναν πριν ή τυπώνουν άλλοι. Δοκιμάζουμε το εν λόγω πρόβλημα εκτυπώνοντας μία απ'τις αναφορές του ίδιου του εκτυπωτή,διαπιστώνοντας ότι είναι όντως πρόβλημα του εκτυπωτή.
+</panel>
+
+<panel title="Βγάζει ιερογλυφικά, εκτυπώνει πολλές σελίδες με μικρά σύμβολα">
+Αυτό μπορεί να συμβαίνει εξαιτίας των drivers. Η μόνη λύση είναι πλήρης απεγκατάσταση του εκτυπωτή και των drivers χρησιμοποιώντας το printmanagement. Ο εύκολος τρόπος για άνοιγμα του print management είναι απ' την αναζήτηση. Αν δεν υπάρχει, όπως στην περίπτωση των TPCMOD κρατώντας το shift πατάμε δεξί κλικ σε οποιοδήποτε σημείο της επιφάνειας εργασίας και διαλέγουμε open command prompt ή windows powershell. Ως εντολή γράφουμε printmanagement.msc και πατάμε enter. Μετά την απεγκατάσταση, επανεκκινούμε τον υπολογιστή και εγκαθιστούμε εκ νέου τους drivers.
+
+Εναλλακτικά, ενδεχομένως να συμβαίνει εξαιτίας του τύπου σύνδεσης.
+
+^ Βήματα   ^ Ενέργειες  ^
+| 1 | To correct the issue, power off the printer and disconnect all communication cables (i.e., the parallel, Ethernet, and USB cables) connecting the printer to the computer or network. The only cable that should be connected to the printer at this time is the power cord. |
+| 2 | Power the printer back on and print a test page. Did the issue returns? Yes: Continue with Step 3. No: Issue is with the communication cables; please try a different cable or port.|
+| 3 | Power off the printer and disconnect the power cable from the power supply adapter or outlet. Wait 30 to 60 seconds, reconnect the power cable and then turned it on. |
+| 4 | Print another test page. Did the issue returns? Yes: Continue with Step 5. No: Issue is resolved. |
+| 5 | If the issue persists, please contact Lexmark Technical Support for other troubleshooting suggestions. |
+
+
+</panel>
+
+<panel title="Ο υπολογιστής δεν βλέπει πια τον δικτυακό εκτυπωτή">
+Το πρώτο βήμα που πρέπει να δούμε και το οποίο θα μας γλυτώσει από άδικο κόπο, είναι να περιηγηθούμε στο devices and printers, να πατήσουμε δεξί κλικ πάνω στον εν λόγω εκτυπωτή και να διαλέξουμε printer properties. Έπειτα ανοίγουμε την καρτέλα ports, και βλέπουμε την προεπιλεγμένη θύρα για τον εκτυπωτή. Αν η θύρα έχει όνομα αντί για διεύθυνση(συνήθως ETblahblah αντί για 10.x.x.x ή 192.x.x.x) τότε το πρόβλημα συμβαίνει εξαιτίας αυτού του λόγου. Δηλαδή ο υπολογιστής δεν βρίσκει το όνομα του εκτυπωτή στο δίκτυο. Η λύση γι'αυτό είναι να πατήσουμε New Port και μετά TCP/IP port και να εισάγουμε την IP που όντως βρίσκεται ο εκτυπωτής(Μπορούμε να την βρούμε απ'τις ρυθμίσεις του εκτυπωτή).Έπειτα επιλέγοντας την θύρα που μόλις δημιουργήσαμε το πρόβλημα θα πρέπει να λυθεί. Αλλιώς συμβαίνει κάτι άλλο και πρέπει να επανεγκαταστήσουμε τους drivers.
+</panel>
+
+<panel title="Βγάζει Invalid tray/Empty tray">
+Αυτό αλλάζει είτε απ'τις ρυθμίσεις του εκτυπωτή που διαλέγει τον τροφοδότη χαρτιού είτε απ'τις προτιμήσεις εκτύπωσης που κι εκεί διαλέγουμε πάλι για την ρύθμιση του τροφοδότη χαρτιού.
+</panel>
+
+<panel title="Enter service mode σε Ricoh/ SC errors">
+Πατάμε το κίτρινο C, 107, και το κόκκινο C παρατεταμένα μέχρι να μπει σε ρυθμίσεις.
+Αφού μπούμε σε αυτό το μενού έχουμε τις ακόλουθες επιλογές
+Στην αρχή για κάθε error κάνουμε τα εξής:
+| 1 | Ανοίγουμε την μπροστινή πόρτα |
+| 2 | Κλείνουμε απ'τον διακόπτη τον ricoh |
+| 3 | Κλείνουμε την μπροστινή πόρτα |
+| 4 | Ανοίγουμε απ'τον διακόπτη τον ricoh |
+
+Έπειτα δοκιμάζουμε:
+| 1 | Πάμε copy sp ή system sp και πατάμε 5810#(SC Reset), μετά exit πάνω δεξιά |
+| 2 | Πάμε copy sp ή system sp και πατάμε 58810#(Fixed phrase block erasing), μετά exit πάνω δεξιά |
+| 3 | Πάμε copy sp ή system sp και πατάμε 7807#(SC Jam), μετά exit πάνω δεξιά |
+| 4 | Κλείσιμο απ'τον διακόπτη για 5 δευτερόλεπτα |
+</panel>
+
+<panel title="Enter service mode σε Toshiba/ Το πολυμηχάνημα έχει σκαλώσει στο checking system, please don't turn off">
+Κατά την εκκίνηση πατάμε μαζί το 0+8 μέχρι να φορτώσει σε safe mode(test mode) μετά πατάμε τον κωδικό 400 στο πληκτρολόγιο και μετά START (πράσινο κουμπί) και μετά τον κωδικό 0 και μετά ΕΝΤΕR στο touch screen του φωτοτυπικού. Έπειτα κλείνουμε το πολυμηχανημα απ'το κουμπί off πάνω δεξιά κι όχι απ'τον γενικό διακόπτη.
+</panel>
+
+<panel title="Toshiba e-Studio ζητάει κωδικό">
+123456
+</panel>
+
+<panel title="Δικτυακό πολυμηχάνημα για scans (Ricoh/Toshiba/etc)">
+Να τσεκάρουμε **1) __αν είναι σωστές οι δικτυακές ρυθμίσεις(ip/mask/dns)__ 2) __αν είναι σωστό το path του δικτυακού φακέλου στον οποίο αποθηκεύονται τα scanned έγγραφα__ 3) __αν είναι σωστά το username και το password με τα οποία κάνουμε authentication(σε συνεννόηση με τα δίκτυα)__ 4) __αν ο δικτυακός φάκελος προορισμού δεν έχει χώρο__**.
+</panel>
+
+<panel title="Δεν μπορούν να αφαιρεθούν οι εργασίες από την ουρά εκτύπωσης. Έχει χρησιμοποιηθεί σε HP Laserjet 1022">
+To Clear and remove the print job from Spooler follow the steps:
+
+  - Click on the Windows button in the lower left corner of the screen. Select "Control Panel," then "Hardware and Sound" then "Printers."
+  - Double-click on the icon for the printer to which you sent the print job. Find the print job in the list that opens, right-click on it and select "Cancel."
+  - Press the "Cancel" button on the printer's control panel if the job still does not come off the spooler. Switch the printer off and then on again to see if that will delete the print job.
+  - Clear the entire spooler by clicking on the Windows icon, then type "Command." Right-click on "Command Prompt," then click "Run as Administrator."
+  - Type "net stop spooler" and press "Enter." Type "del %systemroot%\System32\spool\printers\*/Q," then press "Enter."
+  - Type "net start spooler," then press "Enter." Type "exit" and press "Enter" to exit the command prompt window.
+</panel>
+
+<panel title="Κωδικοί Φ/Α">
+  * Toshiba eStudio 355 ( Διάδρομος ΓΓ ) Admin Password: 1234567890
+  * Canon iR2020 ( ΤΠΕΝΤ ) Κωδικός συστήματος & υπεύθυνου: 0000411
+</panel>
+
+</accordion>
